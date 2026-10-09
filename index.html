@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1a73e8">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Issues">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>Issues</title>
+<style>
+html,body{margin:0;height:100%;background:#f6f7f9}
+@media(prefers-color-scheme:dark){html,body{background:#111316}}
+body{box-sizing:border-box;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
+iframe{display:block;width:100%;height:100%;border:0}
+</style>
+</head>
+<body>
+<iframe src="https://script.google.com/macros/s/AKfycbzfrp8XHWAZILDJeRjbmOd6YGUUy_kGts5JPAhoq-mwwTN0IiN7m-_w174g-8Dbmea1Hw/exec" allow="camera; geolocation; clipboard-write" title="Issues"></iframe>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js'); });
+}
+</script>
+</body>
+</html>
